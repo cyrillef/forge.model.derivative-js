@@ -19,10 +19,6 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"
   },
-  "files": [
-    "LICENSE",
-    "README.md"
-  ],
   "keywords": [
     "framework",
     "lmv",
