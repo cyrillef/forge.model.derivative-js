@@ -49,7 +49,6 @@
   /**
    * The FormatsFormats model module.
    * @module model/FormatsFormats
-   * @version 2.0.0
    */
 
   /**

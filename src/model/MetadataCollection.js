@@ -49,7 +49,6 @@
   /**
    * The MetadataCollection model module.
    * @module model/MetadataCollection
-   * @version 2.0.0
    */
 
   /**

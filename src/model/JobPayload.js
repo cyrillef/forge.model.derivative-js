@@ -49,7 +49,6 @@
   /**
    * The JobPayload model module.
    * @module model/JobPayload
-   * @version 2.0.0
    */
 
   /**

@@ -49,7 +49,6 @@
   /**
    * The JobStepOutputPayloadAdvanced model module.
    * @module model/JobStepOutputPayloadAdvanced
-   * @version 2.0.0
    */
 
   /**

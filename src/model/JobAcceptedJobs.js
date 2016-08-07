@@ -49,7 +49,6 @@
   /**
    * The JobAcceptedJobs model module.
    * @module model/JobAcceptedJobs
-   * @version 2.0.0
    */
 
   /**

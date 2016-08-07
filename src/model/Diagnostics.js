@@ -49,7 +49,6 @@
   /**
    * The Diagnostics model module.
    * @module model/Diagnostics
-   * @version 2.0.0
    */
 
   /**

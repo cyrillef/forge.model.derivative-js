@@ -49,7 +49,6 @@
   /**
    * The JobPayloadInput model module.
    * @module model/JobPayloadInput
-   * @version 2.0.0
    */
 
   /**

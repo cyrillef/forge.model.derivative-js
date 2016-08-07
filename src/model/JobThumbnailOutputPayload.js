@@ -49,7 +49,6 @@
   /**
    * The JobThumbnailOutputPayload model module.
    * @module model/JobThumbnailOutputPayload
-   * @version 2.0.0
    */
 
   /**

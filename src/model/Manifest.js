@@ -49,7 +49,6 @@
   /**
    * The Manifest model module.
    * @module model/Manifest
-   * @version 2.0.0
    */
 
   /**

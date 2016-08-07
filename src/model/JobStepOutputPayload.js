@@ -49,7 +49,6 @@
   /**
    * The JobStepOutputPayload model module.
    * @module model/JobStepOutputPayload
-   * @version 2.0.0
    */
 
   /**

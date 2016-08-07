@@ -49,7 +49,6 @@
   /**
    * The Job model module.
    * @module model/Job
-   * @version 2.0.0
    */
 
   /**

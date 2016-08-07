@@ -49,7 +49,6 @@
   /**
    * The JobSvfOutputPayload model module.
    * @module model/JobSvfOutputPayload
-   * @version 2.0.0
    */
 
   /**

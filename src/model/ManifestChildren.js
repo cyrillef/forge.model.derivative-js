@@ -49,7 +49,6 @@
   /**
    * The ManifestChildren model module.
    * @module model/ManifestChildren
-   * @version 2.0.0
    */
 
   /**

@@ -49,7 +49,6 @@
   /**
    * The ManifestDerivative model module.
    * @module model/ManifestDerivative
-   * @version 2.0.0
    */
 
   /**

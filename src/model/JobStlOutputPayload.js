@@ -49,7 +49,6 @@
   /**
    * The JobStlOutputPayload model module.
    * @module model/JobStlOutputPayload
-   * @version 2.0.0
    */
 
   /**

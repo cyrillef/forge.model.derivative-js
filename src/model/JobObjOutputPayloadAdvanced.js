@@ -49,7 +49,6 @@
   /**
    * The JobObjOutputPayloadAdvanced model module.
    * @module model/JobObjOutputPayloadAdvanced
-   * @version 2.0.0
    */
 
   /**

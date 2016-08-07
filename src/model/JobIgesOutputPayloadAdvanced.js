@@ -49,7 +49,6 @@
   /**
    * The JobIgesOutputPayloadAdvanced model module.
    * @module model/JobIgesOutputPayloadAdvanced
-   * @version 2.0.0
    */
 
   /**

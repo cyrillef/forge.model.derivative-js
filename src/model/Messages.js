@@ -49,7 +49,6 @@
   /**
    * The Messages model module.
    * @module model/Messages
-   * @version 2.0.0
    */
 
   /**

@@ -46,7 +46,6 @@
   /**
    * Derivatives service.
    * @module api/DerivativesApi
-   * @version 2.0.0
    */
 
   /**

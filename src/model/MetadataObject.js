@@ -49,7 +49,6 @@
   /**
    * The MetadataObject model module.
    * @module model/MetadataObject
-   * @version 2.0.0
    */
 
   /**

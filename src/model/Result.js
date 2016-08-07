@@ -49,7 +49,6 @@
   /**
    * The Result model module.
    * @module model/Result
-   * @version 2.0.0
    */
 
   /**

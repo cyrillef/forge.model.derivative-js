@@ -49,7 +49,6 @@
   /**
    * The JobIgesOutputPayload model module.
    * @module model/JobIgesOutputPayload
-   * @version 2.0.0
    */
 
   /**
