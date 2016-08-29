@@ -74,6 +74,7 @@
      * data is of type: {@link module:model/Result}
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Result}
      */
+    this.deleteManifestEndPoint ='/modelderivative/v2/designdata/{urn}/manifest' ;
     this.deleteManifest = function(urn, callback) {
       var postBody = null;
 
@@ -99,11 +100,11 @@
       var returnType = Result;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/{urn}/manifest', 'DELETE',
+        this.deleteManifestEndPoint, 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
 
     /**
      * Callback function to receive the result of the getDerivativeManifest operation.
@@ -122,6 +123,7 @@
      * @param {module:api/DerivativesApi~getDerivativeManifestCallback} callback The callback function, accepting three arguments: error, data, response
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
+    this.getDerivativeManifestEndPoint ='/modelderivative/v2/designdata/{urn}/manifest/{derivativeUrn}' ;
     this.getDerivativeManifest = function(urn, derivativeUrn, opts, callback) {
       opts = opts || {};
       var postBody = null;
@@ -155,11 +157,11 @@
       var returnType = null;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/{urn}/manifest/{derivativeUrn}', 'GET',
+        this.getDerivativeManifestEndPoint, 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
 
     /**
      * Callback function to receive the result of the getFormats operation.
@@ -178,6 +180,7 @@
      * data is of type: {@link module:model/Formats}
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Formats}
      */
+    this.getFormatsEndPoint ='/modelderivative/v2/designdata/formats' ;
     this.getFormats = function(opts, callback) {
       opts = opts || {};
       var postBody = null;
@@ -200,11 +203,11 @@
       var returnType = Formats;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/formats', 'GET',
+        this.getFormatsEndPoint, 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
 
     /**
      * Callback function to receive the result of the getManifest operation.
@@ -223,6 +226,7 @@
      * data is of type: {@link module:model/Manifest}
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Manifest}
      */
+    this.getManifestEndPoint ='/modelderivative/v2/designdata/{urn}/manifest' ;
     this.getManifest = function(urn, opts, callback) {
       opts = opts || {};
       var postBody = null;
@@ -250,11 +254,11 @@
       var returnType = Manifest;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/{urn}/manifest', 'GET',
+        this.getManifestEndPoint, 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
 
     /**
      * Callback function to receive the result of the getMetadata operation.
@@ -273,6 +277,7 @@
      * data is of type: {@link module:model/Metadata}
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Metadata}
      */
+    this.getMetadataEndPoint ='/modelderivative/v2/designdata/{urn}/metadata' ;
     this.getMetadata = function(urn, opts, callback) {
       opts = opts || {};
       var postBody = null;
@@ -300,11 +305,11 @@
       var returnType = Metadata;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/{urn}/metadata', 'GET',
+        this.getMetadataEndPoint, 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
 
     /**
      * Callback function to receive the result of the getModelviewMetadata operation.
@@ -324,6 +329,7 @@
      * data is of type: {@link module:model/Metadata}
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Metadata}
      */
+    this.getModelviewMetadataEndPoint ='/modelderivative/v2/designdata/{urn}/metadata/{guid}' ;
     this.getModelviewMetadata = function(urn, guid, opts, callback) {
       opts = opts || {};
       var postBody = null;
@@ -357,11 +363,11 @@
       var returnType = Metadata;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/{urn}/metadata/{guid}', 'GET',
+        this.getModelviewMetadataEndPoint, 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
 
     /**
      * Callback function to receive the result of the getModelviewProperties operation.
@@ -381,6 +387,7 @@
      * data is of type: {@link module:model/Metadata}
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Metadata}
      */
+    this.getModelviewPropertiesEndPoint ='/modelderivative/v2/designdata/{urn}/metadata/{guid}/properties' ;
     this.getModelviewProperties = function(urn, guid, opts, callback) {
       opts = opts || {};
       var postBody = null;
@@ -414,11 +421,11 @@
       var returnType = Metadata;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/{urn}/metadata/{guid}/properties', 'GET',
+        this.getModelviewPropertiesEndPoint, 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
 
     /**
      * Callback function to receive the result of the getThumbnail operation.
@@ -438,6 +445,7 @@
      * data is of type: {@link module:model/InputStream}
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InputStream}
      */
+    this.getThumbnailEndPoint ='/modelderivative/v2/designdata/{urn}/thumbnail' ;
     this.getThumbnail = function(urn, opts, callback) {
       opts = opts || {};
       var postBody = null;
@@ -466,11 +474,11 @@
       var returnType = InputStream;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/{urn}/thumbnail', 'GET',
+        this.getThumbnailEndPoint, 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
 
     /**
      * Callback function to receive the result of the translate operation.
@@ -489,6 +497,7 @@
      * data is of type: {@link module:model/Job}
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Job}
      */
+    this.translateEndPoint ='/modelderivative/v2/designdata/job' ;
     this.translate = function(job, opts, callback) {
       opts = opts || {};
       var postBody = job;
@@ -515,11 +524,11 @@
       var returnType = Job;
 
       return this.apiClient.callApi(
-        '/modelderivative/v2/designdata/job', 'POST',
+        this.translateEndPoint, 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
-    }
+    };
   };
 
   return exports;
