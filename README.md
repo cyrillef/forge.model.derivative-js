@@ -44,7 +44,7 @@ Then include *bundle.js* in the HTML pages.
 ## Getting Started
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
-This libray can either use callbacks ot Promises. Do not provide a callback parameter to use Promises.
+This libray can either use callbacks or Promises. Do not provide a callback parameter to use Promises.
 
 #### callback version
 ```javascript
