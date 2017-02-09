@@ -1,14 +1,14 @@
 {
   "name": "forge-model-derivative",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "Asynchronous Javascript/Node.js library for the Autodesk Forge Model Derivative API.",
   "homepage": "https://developer.autodesk.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/autodesk-forge/forge.model.derivative-js"
+    "url": "https://github.com/cyrillef/forge.model.derivative-js"
   },
   "bugs": {
-    "url": "https://github.com/autodesk-forge/forge.model.derivative-js/issues"
+    "url": "https://github.com/cyrillef/forge.model.derivative-js/issues"
   },
   "author": "",
   "contributors": [
@@ -29,7 +29,7 @@
     "api"
   ],
   "dependencies": {
-    "request": "2.74.0"
+    "forge-apis": "0.2.7"
   },
   "devDependencies": {
     "mocha": "~2.3.4",
