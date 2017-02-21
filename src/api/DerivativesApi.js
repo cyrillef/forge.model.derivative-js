@@ -81,7 +81,7 @@
 		this.deleteManifest = function (urn, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.deleteManifest(urn, oauth, oauth.getCredentials());
+			var pr = this.mdClient.deleteManifest(urn, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })
@@ -114,7 +114,7 @@
 		this.getDerivativeManifest = function (urn, derivativeUrn, opts, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.getDerivativeManifest(urn, derivativeUrn, opts, oauth, oauth.getCredentials());
+			var pr = this.mdClient.getDerivativeManifest(urn, derivativeUrn, opts, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })
@@ -147,7 +147,7 @@
 		this.getFormats = function (opts, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.getFormats(opts, oauth, oauth.getCredentials());
+			var pr = this.mdClient.getFormats(opts, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })
@@ -180,7 +180,7 @@
 		this.getManifest = function (urn, opts, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.getManifest(urn, opts, oauth, oauth.getCredentials());
+			var pr = this.mdClient.getManifest(urn, opts, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })
@@ -213,7 +213,7 @@
 		this.getMetadata = function (urn, opts, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.getMetadata(urn, opts, oauth, oauth.getCredentials());
+			var pr = this.mdClient.getMetadata(urn, opts, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })
@@ -247,7 +247,7 @@
 		this.getModelviewMetadata = function (urn, guid, opts, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.getModelviewMetadata(urn, guid, opts, oauth, oauth.getCredentials());
+			var pr = this.mdClient.getModelviewMetadata(urn, guid, opts, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })
@@ -281,7 +281,7 @@
 		this.getModelviewProperties = function (urn, guid, opts, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.getModelviewProperties(urn, guid, opts, oauth, oauth.getCredentials());
+			var pr = this.mdClient.getModelviewProperties(urn, guid, opts, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })
@@ -315,7 +315,7 @@
 		this.getThumbnail = function (urn, opts, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.getThumbnail(urn, opts, oauth, oauth.getCredentials());
+			var pr = this.mdClient.getThumbnail(urn, opts, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })
@@ -348,7 +348,7 @@
 		this.translate = function (job, opts, callback) {
 			//this.apiClient.applyToAuthObjects (this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']) ;
 			var oauth = this.apiClient.getAuthObject(this.oauth2_access_code, this.oauth2_application, ['oauth2_access_code', 'oauth2_application']);
-			var pr = this.mdClient.translate(job, opts, oauth, oauth.getCredentials());
+			var pr = this.mdClient.translate(job, opts, oauth, oauth.getCredentials ? oauth.getCredentials() : oauth.credentials);
 			if (callback === undefined) {
 				return (new Promise(function (resolve, reject) {
 					pr.then(function (result) { resolve(result.body); })

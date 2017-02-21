@@ -1,6 +1,6 @@
 {
   "name": "forge-model-derivative",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Asynchronous Javascript/Node.js library for the Autodesk Forge Model Derivative API.",
   "homepage": "https://developer.autodesk.com/",
   "repository": {
